@@ -51,7 +51,7 @@ export default function Hero() {
 
   const [code] = useState(`
 const profile = {
-    name: 'Shaina',
+    name: 'Anurag',
     skills: [
         'PHP', 'Node.Js', 'React', 'Java', 
         'Python', 'MySql', 'MongoDB', 

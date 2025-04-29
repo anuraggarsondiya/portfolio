@@ -15,37 +15,34 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science and Engineering",
-      school: "Vellore Institute of Technology",
-      mascot: "📘",
-      year: "2022 - 2026",
+      degree: "Bachelor of Engineering in Computer Science and Engineering",
+      school: "Lok Jagruti Institute of Engineering & Technology",
+      mascot: "🎓",
+      year: "2021 - 2025",
       achievements: [],
       skills: [],
-      description:
-        "",
+      description: "",
     },
     {
-      degree: "Senior School Certificate - CBSE",
-      school: "GT Aloha Vidhya Mandir, Chennai",
+      degree: "Higher Secondary Education - GSEB (GSHSEB)",
+      school: "Samarpan Techno School",
+      mascot: "📘",
+      year: "2020 - 2021",
+      achievements: [],
+      skills: [],
+      description: "",
+    },
+    {
+      degree: "Secondary School Education - GSEB (GSHSEB)",
+      school: "Samarpan Techno School",
       mascot: "📗",
-      year: "2022",
+      year: "2018 - 2019",
       achievements: [],
       skills: [],
-      description:
-        "",
-    },
-    {
-      degree: "Indian Certificate of Secondary Education - ICSE",
-      school: "Primrose Schools, Chennai",
-      mascot: "📘",
-      year: "2020",
-      achievements: [],
-      skills: [],
-      description:
-        "",
+      description: "",
     }
   ];
-
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -102,11 +99,10 @@ const EducationSection = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className={`relative border rounded-xl p-8 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm ${
-                hoveredIndex === index
+              className={`relative border rounded-xl p-8 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm ${hoveredIndex === index
                   ? "border-teal-500 scale-[1.02]"
                   : "border-blue-400/20"
-              }`}
+                }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >

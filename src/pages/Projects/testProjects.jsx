@@ -1,25 +1,27 @@
 import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
+import artist from "@/assets/images/artist.jpg";
+import realestate from "@/assets/images/real-estate.jpg";
 
 const projects = [
   {
-    title: "Sorting Visualizer",
+    title: "Artist Platform",
     description:
-      "Sorting Visualizer is an interactive project that visually demonstrates how sorting algorithms work. It provides a dynamic representation of the sorting process, allowing users to see how elements are rearranged in real-time.",
-    src: "",
+      "A platform where artists can upload and showcase their artworks, organize exhibitions, and engage with fans. Users can follow their favorite artists, explore curated collections, and get updates on upcoming shows and events.",
+    src: artist,
     link: "",
-    color: "#5196fd",
-    githubLink: "https://github.com/shaina-gh/Sorting-Visualizer",
-    liveLink: "sortingvisualizer-shaina.netlify.app/",
+    color: "#f67280",
+    githubLink: "",
+    liveLink: "",
   },
   {
-    title: "Intelligent Traffic Management System",
+    title: "Real Estate Management System",
     description:
-      "Developed an intelligent traffic management system leveraging Google Maps, IoT sensors, and AI. The system dynamically adjusts traffic signals and guides autonomous vehicles based on real-time traffic density and emergency vehicle detection.",
-    src: "",
+      "A complete real estate management application that allows property listings, updates, and administrative control. Features include detailed property uploads, user inquiries, and property status management for seamless real estate operations.",
+    src: realestate,
     link: "",
-    color: "#8f89ff",
+    color: "#44bba4",
     githubLink: "",
     liveLink: "",
   }
@@ -102,7 +104,7 @@ function Card({
           {/* Image section - full width on mobile, 55% on desktop */}
           <div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
             <motion.img
-              src={url}
+              src={src}
               alt={title}
               className="w-full h-full object-cover"
               initial={{ scale: 1 }}
@@ -142,74 +144,6 @@ function Card({
               <p className="text-sm md:text-base text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-none max-w-md">
                 {description}
               </p>
-            </div>
-
-            <div className="mt-4 md:mt-auto pt-4">
-              <div className="w-full h-[1px] bg-gray-800 mb-4 md:mb-6" />
-
-              <div className="flex items-center gap-4">
-                {/* GitHub Link */}
-                <motion.a
-                  href={projects[i].githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2"
-                  whileHover={{ y: -3 }}
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={color}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                  <span
-                    className="text-xs md:text-sm font-medium"
-                    style={{ color }}
-                  >
-                    Code
-                  </span>
-                </motion.a>
-
-                {/* Live Link */}
-                <motion.a
-                  href={projects[i].liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2"
-                  whileHover={{ y: -3 }}
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={color}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                  <span
-                    className="text-xs md:text-sm font-medium"
-                    style={{ color }}
-                  >
-                    Live
-                  </span>
-                </motion.a>
-              </div>
             </div>
           </div>
         </div>

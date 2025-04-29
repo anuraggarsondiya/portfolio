@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Globe, Server } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -54,28 +54,20 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Code2,
-      title: "Joint Secretary",
-      company: "The Linux Club, VIT",
-      period: "2024 - 2025",
+      icon: Globe,
+      title: "Independent Freelancer",
+      company: "Cooqu (Australia)",
+      period: "March 2025 - Present",
       description:
-        "Had the opportunity to organize and host numerous hackathons, CTF-based competitions, and cloud-focused workshops alongside my team. It was an incredible experience driving tech events, fostering collaboration, and engaging with a passionate community of developers.",
+        "Remotely delivered full-time development services, including backend APIs and cloud deployment. Worked closely with Australian clients, implemented secure OTP systems, and managed project lifecycles for web and mobile applications hosted on Azure.",
     },
     {
-      icon: Network,
-      title: "Operations Team Member",
-      company: "Enactus, VIT",
-      period: "2023 - 2025",
+      icon: Server,
+      title: "Web Developer",
+      company: "Trusol",
+      period: "Dec 2023 - Feb 2025",
       description:
-        "I worked to create employment opportunities for underprivileged communities. I gained hands-on experience in sales, marketing, and management while serving as the key point of contact for vendors and resources, ensuring smooth project execution.",
-    },
-    {
-      icon: Layers,
-      title: "Volunteer",
-      company: "Covid Care Teens",
-      period: "2021",
-      description:
-        "I played a key role in gathering and verifying resource data, building a database with 100+ daily entries. I directly assisted 80+ individuals with medical and isolation support and collaborated on essential service lists, including ambulance and mental health resources. I also managed and updated critical information packages, ensuring accessibility for 1,000+ users during the pandemic.",
+        "Developed backend systems, webhooks, and API integrations. Built real-time chatbots using NodeJS & MeteorJS, implemented task queues for efficient background processing, and designed secure systems with role-based access control and CSRF handling.",
     },
   ];
 
